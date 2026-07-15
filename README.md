@@ -22,7 +22,7 @@ Izvorni skup podataka sastoji se od 9 međusobno povezanih CSV tabela:
 | `geolocation` | Geografske koordinate po poštanskom prefiksu |
 | `product_category_name_translation` | Prevod naziva kategorija sa portugalskog na engleski |
 
-## 🔧 Priprema podataka (ETL)
+## Priprema podataka (ETL)
 
 - Uvoz svih tabela putem Power Query (**Get Data → Text/CSV**)
 - Provera i ispravka tipova podataka (datumi, decimalni brojevi)
