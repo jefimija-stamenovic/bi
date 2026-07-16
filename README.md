@@ -32,7 +32,7 @@ Izvorni skup podataka sastoji se od 9 međusobno povezanih CSV tabela:
 
 ## Model podataka
 
-Model je organizovan po principu zvezdaste šeme (**star schema**), sa tabelom `orders` u centralnoj poziciji. Radi omogućavanja filtriranja u oba smera (npr. filtriranje po prodavcu ili kategoriji proizvoda, koje treba da utiče i na povezane tabele višeg nivoa), sledeće relacije su podešene kao dvosmerne (**Both**):
+Model je organizovan po principu šeme pahuljice (**star schema**), sa tabelom `orders` u centralnoj poziciji. Radi omogućavanja filtriranja u oba smera (npr. filtriranje po prodavcu ili kategoriji proizvoda, koje treba da utiče i na povezane tabele višeg nivoa), sledeće relacije su podešene kao dvosmerne (**Both**):
 
 - `customers` ↔ `orders`
 - `orders` ↔ `order_items`
@@ -54,7 +54,7 @@ Mere su organizovane u izdvojenoj tabeli `_Measures`, grupisane po analitičkim 
 | **Sales Overview** | Prihod, trendovi kroz vreme, prodaja po kategorijama proizvoda |
 | **Customer Overview** | Geografska raspodela, segmentacija i zadovoljstvo kupaca |
 | **Delivery Overview** | Operativna efikasnost isporuke, kašnjenja po regionu |
-| **Seller Performance Overview** | Prihod, ocene i pouzdanost prodavaca |
+| **Seller Overview** | Prihod, ocene i pouzdanost prodavaca |
 
 Svaka stranica sadrži segmentatore (godina, savezna država, kategorija proizvoda) koji omogućavaju detaljnije istraživanje podataka.
 
