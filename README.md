@@ -32,7 +32,7 @@ Izvorni skup podataka sastoji se od 9 međusobno povezanih CSV tabela:
 
 ## Model podataka
 
-Model je organizovan po principu zvezdaste šeme (**star schema**), sa tabelom `orders` u centralnoj poziciji. Radi omogućavanja filtriranja u oba smera (npr. filtriranje po prodavcu ili kategoriji proizvoda, koje treba da utiče i na povezane tabele višeg nivoa), sledeće relacije su podešene kao dvosmerne (**Both**):
+Model je organizovan po principu šeme pahuljice (**star schema**), sa tabelom `orders` u centralnoj poziciji. Radi omogućavanja filtriranja u oba smera (npr. filtriranje po prodavcu ili kategoriji proizvoda, koje treba da utiče i na povezane tabele višeg nivoa), sledeće relacije su podešene kao dvosmerne (**Both**):
 
 - `customers` ↔ `orders`
 - `orders` ↔ `order_items`
